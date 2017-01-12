@@ -4,7 +4,7 @@ var green = [75, 100, 40];
 var blue = [196, 77, 55];
 var purple = [280, 50, 60];
 
-var myName = "Shane Lee O'Shea";
+var myName = "Rian";
 
 
 letterColors = [red, orange, green, blue, purple];
