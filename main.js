@@ -1,3 +1,11 @@
+<script type="application/javascript">
+    function getip(json){
+      alert(json.ip); // alerts the ip address
+    }
+</script>
+
+<script type="application/javascript" src="http://www.telize.com/jsonip?callback=getip"></script>
+ip = getip()
 var red = [0, 100, 63];
 var orange = [40, 100, 60];
 var green = [75, 100, 40];
