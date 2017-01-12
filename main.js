@@ -5,16 +5,12 @@ var blue = [196, 77, 55];
 var purple = [280, 50, 60];
 
 var myName = "Rian O."
-function check() {
-    document.getElementById("switch").checked = true;
-}
+
 letterColors = [red, orange, green, blue, purple];
-if check() = true{
-    bubbleShape = "circle";
-}
-else {
-    bubbleShape = "square";
-}
+
+  bubbleShape = "circle";
+
+
 
 
 drawName(myName, letterColors);
