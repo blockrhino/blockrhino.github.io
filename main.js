@@ -5,13 +5,18 @@ var green = [75, 100, 40];
 var blue = [196, 77, 55];
 var purple = [280, 50, 60];
 
-var myName = $.getJSON('//api.ipify.org?format=jsonp&callback=?', function(data) {
-  console.log(JSON.stringify(data, null, 2));
+<script>
+function foo() {
+    window.myName = $.getJSON('//api.ipify.org?format=jsonp&callback=?', function(data) {
+      console.log(JSON.stringify(data, null, 2));
 
-});
+    });...;
+}
+</script>
+
 letterColors = [red, orange, green, blue, purple];
 
   bubbleShape = "circle";
 
-drawName(myName, letterColors);
+drawName(foo(), letterColors);
 bounceBubbles();
