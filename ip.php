@@ -42,4 +42,5 @@ function validate_ip($ip) {
      self::$ip = $ip;
      return true;
  }
+
 ?>
