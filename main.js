@@ -5,18 +5,15 @@ var green = [75, 100, 40];
 var blue = [196, 77, 55];
 var purple = [280, 50, 60];
 
-<script>
-function foo() {
-    window.myName = $.getJSON('//api.ipify.org?format=jsonp&callback=?', function(data) {
-      console.log(JSON.stringify(data, null, 2));
-
-    });...;
-}
-</script>
+var ip = new XMLHttpRequest();
+ip.open('//api.ipify.org?format=jsonp&callback=?', function(data) {
+  console.log(JSON.stringify(data, null, 2));
+ip.send();
+var userIp = ip.statusText;
 
 letterColors = [red, orange, green, blue, purple];
 
   bubbleShape = "circle";
 
-drawName(foo(), letterColors);
+drawName(ip, letterColors);
 bounceBubbles();
