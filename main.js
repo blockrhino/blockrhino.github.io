@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html><head>
     <style>
       html, body, div, span, applet, object, iframe,
