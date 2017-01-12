@@ -1,10 +1,7 @@
-<script type="application/javascript">
-    function getip(json){
-      alert(json.ip); // alerts the ip address
-    }
-</script>
 
-<script type="application/javascript" src="http://www.telize.com/jsonip?callback=getip"></script>
+$.getJSON('//api.ipify.org?format=jsonp&callback=?', function(data) {
+  console.log(JSON.stringify(data, null, 2));
+});
 
 var red = [0, 100, 63];
 var orange = [40, 100, 60];
@@ -12,14 +9,11 @@ var green = [75, 100, 40];
 var blue = [196, 77, 55];
 var purple = [280, 50, 60];
 
-var myName = getip(json);
+var myName = function(data);
 
 letterColors = [red, orange, green, blue, purple];
 
   bubbleShape = "circle";
-
-
-
 
 drawName(myName, letterColors);
 bounceBubbles();
